@@ -11,25 +11,24 @@ import androidx.appcompat.app.AppCompatActivity;
 public class MainActivity extends AppCompatActivity {
     private EditText latitud1,latitud2,latitud3,longitud1,longitud2,longitud3;
     private TextView datoTextView;
-    private Button btnLimpiar, btnAgregar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         datoTextView = findViewById(R.id.dato);
-        btnAgregar = findViewById(R.id.btnAgregar);
+        Button btnAgregar = findViewById(R.id.btnAgregar);
         latitud1 = findViewById(R.id.latitud1);
         latitud2 = findViewById(R.id.latitud2);
         latitud3 = findViewById(R.id.latitud3);
         longitud1 = findViewById(R.id.longitud1);
         longitud2 = findViewById(R.id.longitud2);
         longitud3 = findViewById(R.id.longitud3);
-        btnLimpiar = findViewById(R.id.btnlimpiar);
+        Button btnLimpiar = findViewById(R.id.btnlimpiar);
 
         btnAgregar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Obtener el texto ingresado en el EditText
                 String datoIngresado = longitud1.getText().toString();
 
                 // Establecer el texto en el TextView
