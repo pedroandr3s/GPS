@@ -31,7 +31,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String datoIngresado = longitud1.getText().toString();
 
-                // Establecer el texto en el TextView
                 datoTextView.setText(datoIngresado);
             }
         });
