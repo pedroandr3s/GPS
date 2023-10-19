@@ -16,7 +16,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        datoTextView = findViewById(R.id.dato);
         Button btnAgregar = findViewById(R.id.btnAgregar);
         latitud1 = findViewById(R.id.latitud1);
         latitud2 = findViewById(R.id.latitud2);
@@ -37,7 +36,6 @@ public class MainActivity extends AppCompatActivity {
         btnLimpiar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Borra el texto y restaura el hint
                 latitud1.setText("");
                 latitud2.setText("");
                 latitud3.setText("");

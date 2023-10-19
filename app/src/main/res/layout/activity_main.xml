@@ -168,18 +168,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.041" />
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="164dp"
-        android:layout_height="186dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/https___meta_l_cdn_bubble_io_f1626289353315x373449631288344640_bubble_s_google_map_extender_png" />
-
     <Button
         android:id="@+id/btnAgregar"
         android:layout_width="383dp"
@@ -197,32 +185,36 @@
 
     <Button
         android:id="@+id/btnlimpiar"
-        android:layout_width="386dp"
-        android:layout_height="45dp"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
         android:layout_weight="1"
         android:background="@color/colorGoogleMapsPink"
         android:text="Limpiar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.36"
+        app:layout_constraintHorizontal_bias="0.419"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.819"
+        app:layout_constraintVertical_bias="0.82"
         app:rippleColor="@color/colorGoogleMapsPink"
         app:strokeColor="@color/colorGoogleMapsPink" />
 
-    <TextView
-        android:id="@+id/dato"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        android:textColor="#FDFDFD"
-        android:textSize="24sp"
+    <LinearLayout
+        android:layout_width="165dp"
+        android:layout_height="185dp"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.396"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.924" />
+        app:layout_constraintVertical_bias="0.003">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="164dp"
+            android:layout_height="186dp"
+            app:srcCompat="@drawable/https___meta_l_cdn_bubble_io_f1626289353315x373449631288344640_bubble_s_google_map_extender_png" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
